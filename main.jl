@@ -22,5 +22,6 @@ test_data = DataProcessing.prep(test_x, test_y)
 
 net_W, net_b  = initialize_net(784, [70, 70], 10) 
 
-
+Solvers.random_SGD!(net_W, net_b, train_data, 100, 0.0324, show_cost = true)
+plot!()
 
